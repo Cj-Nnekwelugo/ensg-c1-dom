@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning DOM</title>
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="accessing-dom.js" defer></script> -->
+    <script src="modify-dom.js" defer></script>
 </head>
 <body>
 
@@ -17,12 +19,46 @@
     <p class="text">This is paragraph 3</p>
     <p class="text">This is paragraph 4</p>
 
-    <ol>
+    <ol class="list">
         <li>This is a list element</li>
         <li>This is a list element</li>
         <li>This is a list element</li>
     </ol>
+
+    <h2 class="title" id="title">
+        <span>Implementing query selector</span>
+        <span style="display: none;">Hidden text</span>
+    </h2>
+
+    <div class="dom">
+        <h2>Introduction to DOM</h2>
+        <h2>Introduction to DOM Manipulation</h2>
+
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, nisi.
+        </p>
+    </div>
+
+    <header id="main-header">
+        <h1>Welcome Back, Admin</h1>
+
+        <div>
+            <h2>Dashboard title</h2>
+
+            <p class="content">Welcome text</p>
+
+            <a id="link">Go to W3Schools</a>
+        </div>
+    </header>
+
+    <div id="advert" class="advert">
+        Main advert goes here
+    </div>
+
     
-    <!-- <script src="index.js"></script> -->
+    
+    <br>
+    <br>
+    <br>
 </body>
 </html>
