@@ -38,3 +38,39 @@ h2Element.className = "new-title";
 // Styling
 // background-color === backgroundColor
 // border-radius === borderRadius
+
+const introJs = document.getElementById("intro-js");
+// console.dir(introJs);
+introJs.style.backgroundColor = "gold";
+introJs.style.color = "black";
+introJs.style.paddingInline = "5rem";
+introJs.style.borderRadius = "15px";
+introJs.style.transform = "rotate(5deg)";
+// introJs.style.display = "none";
+
+// Data Attribute
+console.log(introJs.dataset.introText);
+introJs.dataset.uniqueTextId = "gshb5627Ndnkl8l";
+
+
+// Form Values
+const fullName = document.getElementById("full-name");
+// console.dir(fullName);
+fullName.value = "Sam Jackson";
+console.log(fullName.value);
+
+const gender = document.getElementById("gender");
+console.dir(gender);
+gender.checked = false;
+
+// Traversing the DOM
+const headingEl = document.getElementById("heading");
+console.log(headingEl.parentElement);
+console.log(headingEl.parentElement.childNodes);
+
+console.log(headingEl.nextElementSibling.nextElementSibling);
+
+// closest() method
+const grandChild = document.querySelector(".grand-child");
+console.log(grandChild.closest(".parent"));
+

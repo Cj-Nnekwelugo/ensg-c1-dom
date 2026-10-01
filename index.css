@@ -3,3 +3,10 @@
     height: 10rem;
     background-color: blue;
 }
+
+.intro-js {
+    background-color: blue;
+    color: white;
+    padding: 2rem 1rem;
+    font-size: 3rem;
+}
