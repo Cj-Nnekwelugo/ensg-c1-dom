@@ -6,7 +6,9 @@
     <title>Learning DOM</title>
     <link rel="stylesheet" href="index.css">
     <!-- <script src="accessing-dom.js" defer></script> -->
-    <script src="modify-dom.js" defer></script>
+    <!-- <script src="modify-dom.js" defer></script> -->
+    <!-- <script src="create-element.js" defer></script> -->
+    <script src="events-handling.js" defer></script>
 </head>
 <body>
 
@@ -55,6 +57,8 @@
         Main advert goes here
     </div>
 
+    <div id="container"></div>
+
     <h3 id="intro-js" class="intro-js" data-intro-text="Learning the DOM">
         Introduction to styling elements with JS
     </h3>
@@ -87,8 +91,33 @@
         <a href="#" class="link">Learn more</a>
     </div>
 
+    <div class="create">
+        <h2>Creating Elements</h2>
+    </div>
 
+    <div id="remove">
+        <h2>Removing elements from the DOM</h2>
 
+        <p>
+            This is how we remove new elements from the DOM
+        </p>
+    </div>
+
+    <button ondblclick="sayResult()">
+        Click Here
+    </button>
+
+    <button id="btn">
+        Submit Result
+    </button>
+
+    <button id="increase-btn">Increase</button>
+    <p id="display-count"></p>
+
+    <button id="display-name-btn">Display User Name</button>
+
+    <br>
+    <br>
     <br>
     <br>
     <br>
