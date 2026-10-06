@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <!-- Double click event -->
+    <button 
+        class="bg-yellow-400 py-2.5 px-8 rounded-3xl active:translate-y-2 cursor-pointer"
+        id="dbl-btn"
+    >
+        Double click here
+    </button>
+
+    <form 
+        id="contact-form"
+        class="flex flex-col gap-4 border border-black/30 py-10 px-8 m-8"
+    >
+        <input 
+            type="text" 
+            id="fullname" 
+            placeholder="Enter your full name"
+            class="border border-black/30 text-sm"
+        >
+        <input 
+            type="email" 
+            id="email" 
+            placeholder="Ex: John@email.com"
+            class="border border-black/30 text-sm"
+        >
+
+        <button 
+            type="submit"
+            class="bg-yellow-400 py-2.5 px-8 rounded-3xl active:translate-y-2 cursor-pointer"
+        >
+            Submit Data
+        </button>
+    </form>
+
+    <div id="parent">
+        <button
+            class="bg-yellow-400 py-2.5 px-8 rounded-3xl active:translate-y-2 cursor-pointer"
+            id="child"
+        >
+            click Here
+        </button>
+    </div>
+
+    <h1 class="text-red-500 font-semibold text-5xl" id="heading">Event Bubbling</h1>
+    
+    <!-- <script src="events-practice.js"></script> -->
+     <script src="event-bubbling.js"></script>
+</body>
+</html>
