@@ -39,4 +39,4 @@ function increaseCount() {
 // syntax
 // setInterval(callback, timeInterval)
 
-setInterval(increaseCount, 5000);
+// setInterval(increaseCount, 5000);
