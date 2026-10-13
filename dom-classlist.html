@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Classlist</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="dom-classlist.js" defer></script>
+
+    <style>
+        .toggle-btn {
+            background-color: yellow;
+            padding: 0.7rem 2rem;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .toggle-btn:active{
+            transform: translateY(2px);
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box" class="w-3/10 h-screen bg-blue-600 text-white font-extrabold text-6xl hidden justify-center items-center">Box</div>
+
+    <button id="show-btn" class="bg-yellow-200 cursor-pointer py-2 px-10 rounded-2xl active:translate-y-2 absolute right-70 top-10">Show</button>
+    <button id="hide-btn" class="bg-yellow-200 cursor-pointer py-2 px-10 rounded-2xl active:translate-y-2 absolute right-70 top-30">Hide</button>
+
+    <!-- <button id="toggle-btn" class="toggle-btn ">Toggle</button> -->
+
+</body>
+</html>
