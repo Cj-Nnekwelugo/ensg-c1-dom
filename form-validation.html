@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="form-validation.js" defer></script>
+</head>
+<body>
+    
+    <form 
+        id="contact-form"
+        class="border border-black/10 py-12 px-6 rounded-3xl shadow-lg m-4 w-full max-w-2xl flex flex-col gap-8 mx-auto"
+    >
+        <div class="flex gap-4 w-full">
+            <input 
+                type="text" 
+                placeholder="Enter your first name" 
+                id="firstname"
+                class="h-10 border border-black/30 px-3 text-sm placeholder:text-sm rounded w-1/2"
+            >
+
+            <input 
+                type="text" 
+                placeholder="Enter your last name" 
+                id="lastname"
+                class="h-10 border border-black/30 px-3 text-sm placeholder:text-sm rounded w-1/2"
+            >
+        </div>
+
+        <input 
+            type="email" 
+            id="email" 
+            placeholder="Enter your email"
+            class="h-10 border border-black/30 px-3 text-sm placeholder:text-sm rounded w-full"
+        >
+
+        <input 
+            type="tel" 
+            placeholder="Enter your phone number"
+            id="phone-number"
+            class="h-10 border border-black/30 px-3 text-sm placeholder:text-sm rounded w-full"
+        >
+
+        <button 
+            type="submit"
+            class="bg-yellow-400 font-semibold text-lg py-3 px-10 rounded-3xl hover:bg-blue-500 hover:text-white active:translate-y-2 cursor-pointer transition-colors duration-200"
+        >
+            Submit
+        </button>
+    </form>
+
+    <div 
+        id="modal"
+        class="w-full h-screen absolute top-0 left-0 bg-black/20 hidden"
+    >
+        <div
+            class="bg-white min-h-2/5 w-9/10 max-w-lg mx-auto rounded-3xl relative top-10 py-8 px-6 shadow-xl flex flex-col gap-8"
+        >
+            <h2 class="text-red-500 text-sm font-medium">
+                Application Error!
+            </h2>
+
+            <p id="message"></p>
+
+            <button 
+                class="bg-blue-500 py-3 px-10 text-white font-semibold text-sm rounded-3xl cursor-pointer"
+                id="close-btn"
+            >
+                Close
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
