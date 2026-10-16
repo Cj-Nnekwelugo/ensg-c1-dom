@@ -26,7 +26,6 @@ function clearFormData() {
 
 contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    event.stopPropagation();
     
     const formData = {
         firstName: firstNameInput.value.trim(),
@@ -57,4 +56,4 @@ closeButton.addEventListener("click", (event) => {
 
 document.documentElement.addEventListener("click", () => {
     handleHideModalElement();
-})
+});
