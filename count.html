@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-4">
+    
+    <p id="count-value-display" class="text-6xl font-bold mb-4"></p>
+
+    <div class="flex flex-col md:flex-row gap-4">
+        <button id="inc-btn" class="bg-yellow-200 cursor-pointer active:translate-y-2">Increase Count</button>
+        <button id="dec-btn" class="bg-blue-200 cursor-pointer active:translate-y-2">Decrease Count</button>
+        <button id="upd-btn" class="bg-green-200 cursor-pointer active:translate-y-2">Update Count</button>
+    </div>
+
+    <script src="count.js"></script>
+</body>
+</html>
